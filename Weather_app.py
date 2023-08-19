@@ -38,7 +38,7 @@ def getWeather() :
 
     '''
 
-    api_key = "b22aa5b1a88d58e60129f490fd40e6bc"
+    api_key = "API_KEY"
 
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
@@ -64,8 +64,8 @@ def getWeather() :
 
 
     #weather
-    #api = "https://api.openweathermap.org/data/2.5/weather?lat="+ str(longitude) +"&lon="+ str(latitude) +"&units=standard&exclude=hourly&appid=bfc86330756f53745f57b8e4d795e906"
-    api = "https://api.openweathermap.org/data/3.0/onecall?lat="+ str(latitude) +"&lon="+ str(longitude) +"&units=metric&exclude=hourly,minutely,alerts&appid=213eb01c1973aff36130306ee7fe4cf6"
+    #api = "https://api.openweathermap.org/data/2.5/weather?lat="+ str(longitude) +"&lon="+ str(latitude) +"&units=standard&exclude=hourly&appid=API_KEY"
+    api = "https://api.openweathermap.org/data/3.0/onecall?lat="+ str(latitude) +"&lon="+ str(longitude) +"&units=metric&exclude=hourly,minutely,alerts&appid=API_KEY"
     json_data = requests.get(api).json()
 
     #current
@@ -90,8 +90,8 @@ def getWeather() :
     print(description)
     '''
 
-    #api1 = "https://api.openweathermap.org/data/2.5/forecast/daily?lat="+ str(longitude) +"&lon="+ str(latitude) +"&cnt=1&units=standard&appid=bfc86330756f53745f57b8e4d795e906"
-    #api2 = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=44.34&lon=10.99&cnt=7&appid=646824f2b7b86caffec1d0b16ea77f79"
+    #api1 = "https://api.openweathermap.org/data/2.5/forecast/daily?lat="+ str(longitude) +"&lon="+ str(latitude) +"&cnt=1&units=standard&appid=API_KEY"
+    #api2 = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=44.34&lon=10.99&cnt=7&appid=API_KEY"
     #data = requests.get(api2).json()
 
     #first cell
